@@ -1,23 +1,24 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
-  /**
-    * main - random number to int n everytime
-    * it executes, and prints it
-    *Return: 0
-    */
+/**
+ * main - random number to int n everytime
+ * it executes, and prints it
+ * Return: 0
+ */
 
 int main(void)
 {
-	int n;
+	int a;
 
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
-		printf("%d is postive\n", n);
-	else if (n == 0)
-		printf("%d is zero\n", n);
-	else if (n < 0)
-		printf("%d is negative\n", n);
+	a = rand() - RAND_MAX / 2;
+	if (a > 0)
+		printf("%d is positive\n", a);
+	else if (a == 0)
+		printf("%d is zero\n", a);
+	else if (a < 0)
+		printf("%d is negative\n", a);
 	return (0);
 }
